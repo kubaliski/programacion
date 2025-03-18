@@ -1,0 +1,113 @@
+{
+    "evaluacion":"Programación Evaluación",
+    "tema":"Tema 4",
+    "partes":[
+        {
+            "titulo": "Parte 1",
+            "preguntas":[
+                 {
+                    "id":"1.1",
+                    "pregunta":"¿Cómo se declara una cadena en Java?",
+                    "opciones":[
+                        "String cadena = 'Texto'",
+                        "char cadena[] = 'texto'",
+                        "int cadena = 'texto'",
+                        "new cadena = String()"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion": "String nombre = “Juan”;  // Inicialización directa ó String ciudad = new String(“Madrid”); // Creación con el constructor"
+                 },
+                 {
+                    "id":"1.2",
+                    "pregunta":"¿Qué método devuelve la longitud de una cadena?",
+                    "opciones":[
+                        "size()",
+                        "length()",
+                        "len()",
+                        "count()"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"El método length() devuelve la cantidad de caracteres en la cadena."
+                 },
+                 {
+                    "id":"1.3",
+                    "pregunta":"¿Qué método se utiliza para concatenar cadenas?",
+                    "opciones":[
+                        "append()",
+                        "join()",
+                        "concat()",
+                        "merge()"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion": "La clase String proporciona múltiples métodos para manipular y trabajar con cadenas de caracteres, concat es uno de ellos"
+                 },
+                 {
+                    "id":"1.4",
+                    "pregunta":"¿Cuál es la diferencia entre equals() y == en cadenas?",
+                    "opciones":[
+                        "equals() compara referencias y == el contenido",
+                        "equals() compara el contenido y == las referencias",
+                        "Ambas comparan contenido",
+                        "Ambas comparan referencias"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"equals() compara el contenido (los caracteres) de las cadenas, mientras que == compara las referencias (direcciones de memoria) de los objetos String."
+                 }
+            ]
+        },
+        {
+            "titulo": "Parte 2",
+            "preguntas":[
+                {
+                    "id":"2.1",
+                    "pregunta":" ¿Cuál es la forma correcta de acceder a elementos en un array?",
+                    "opciones":[
+                        "array.get(1)",
+                        "array[0]",
+                        "array(0)",
+                        "array.elemento(1)"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":""
+                },
+                {
+                    "id":"2.2",
+                    "pregunta":"Para comparar el contenido de dos Strings, ¿qué método debemos usar?",
+                    "opciones":[
+                        "==",
+                        "compare()",
+                        "equals()",
+                        "compareTo()"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":""
+                },
+                {
+                    "id":"2.3",
+                    "pregunta":"¿Qué método se utiliza para ordenar un array en Java?",
+                    "opciones":[
+                        "array.sort()",
+                        "Arrays.sort()",
+                        "Collections.sort()",
+                        "sort.array()"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":""
+                },
+                {
+                    "id":"2.4",
+                    "pregunta":"Para convertir un String a número entero, usamos:",
+                    "opciones":[
+                        "String.toInteger()",
+                        "Integer.parseInt()",
+                        "Convert.toInt()",
+                        "Int.parse()"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":""
+                }
+            ]
+
+        }
+    ]
+}
