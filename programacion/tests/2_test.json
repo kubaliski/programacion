@@ -1,0 +1,608 @@
+{
+    "evaluacion": "Programación Evaluación",
+    "tema": "Tema 2",
+    "partes": [
+      {
+        "titulo": "Parte 1",
+        "preguntas": [
+          {
+            "id": "1.1",
+            "pregunta": "¿Cuál es el propósito del método main en Java?",
+            "opciones": [
+              "Es el punto de entrada del programa",
+              "Define el nombre del paquete",
+              "Declara las variables globales",
+              "Importa bibliotecas externas"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "El método main es el punto de entrada para cualquier aplicación Java. La JVM busca este método específico para iniciar la ejecución del programa."
+          },
+          {
+            "id": "1.2",
+            "pregunta": "¿Qué bloque se ejecuta una vez al cargar la clase?",
+            "opciones": [
+              "Bloque de inicialización",
+              "Bloque estático",
+              "Método principal",
+              "Constructor"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El bloque estático (static) se ejecuta una única vez cuando la JVM carga la clase en memoria, antes de crear cualquier instancia."
+          },
+          {
+            "id": "1.3",
+            "pregunta": "¿Qué ocurre si un programa Java no tiene un método main válido?",
+            "opciones": [
+              "Se ejecuta correctamente",
+              "El programa no compila",
+              "El programa lanza un error en tiempo de ejecución",
+              "Nada, pero muestra una advertencia"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "El programa compila correctamente pero al intentar ejecutarlo, la JVM lanza un error 'NoSuchMethodError' porque no encuentra el punto de entrada obligatorio."
+          },
+          {
+            "id": "1.4",
+            "pregunta": "¿Cuál es la principal diferencia entre un bloque de inicialización y un bloque estático?",
+            "opciones": [
+              "El bloque estático solo se ejecuta al crear una instancia",
+              "El bloque de inicialización se ejecuta una vez por clase",
+              "El bloque de inicialización se ejecuta cada vez que se crea una instancia",
+              "No hay diferencias significativas"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "Los bloques de inicialización (sin static) se ejecutan cada vez que se crea un objeto, mientras que los bloques estáticos se ejecutan solo una vez cuando la clase es cargada."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 2",
+        "preguntas": [
+          {
+            "id": "2.1",
+            "pregunta": "¿Qué identificador es válido en Java?",
+            "opciones": [
+              "2variable",
+              "_nombre",
+              "public",
+              "precio@"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Los identificadores en Java pueden comenzar con una letra, guion bajo (_) o signo de dólar ($). '_nombre' es válido mientras que los demás son inválidos."
+          },
+          {
+            "id": "2.2",
+            "pregunta": "¿Qué convención se recomienda para nombrar las clases?",
+            "opciones": [
+              "camelCase",
+              "snake_case",
+              "PascalCase",
+              "UPPER_CASE"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "PascalCase (primera letra de cada palabra en mayúscula) es la convención recomendada para nombrar clases en Java, como en 'MiClase'."
+          },
+          {
+            "id": "2.3",
+            "pregunta": "¿Cuál de las siguientes opciones NO es una regla para los identificadores?",
+            "opciones": [
+              "No pueden contener espacios",
+              "No pueden ser una palabra reservada",
+              "Deben comenzar con una letra, _ o $",
+              "Pueden contener cualquier carácter especial"
+            ],
+            "respuestaCorrecta": 3,
+            "explicacion": "Los identificadores en Java no pueden contener caracteres especiales excepto _ y $. La afirmación de que pueden contener cualquier carácter especial es falsa."
+          },
+          {
+            "id": "2.4",
+            "pregunta": "¿Qué sucede si usas una palabra reservada como identificador?",
+            "opciones": [
+              "El programa compila, pero lanza un error de ejecución",
+              "El programa compila sin problemas",
+              "El programa no compila y lanza un error de sintaxis",
+              "No sucede nada, pero muestra una advertencia"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "El compilador detecta inmediatamente el uso de palabras reservadas como identificadores y produce un error de sintaxis, impidiendo la compilación."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 3",
+        "preguntas": [
+          {
+            "id": "3.1",
+            "pregunta": "¿Cuál de las siguientes es una palabra reservada en Java?",
+            "opciones": [
+              "valor",
+              "public",
+              "variable",
+              "imprimir"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "'public' es una palabra reservada en Java que define el nivel de acceso. Las demás opciones son identificadores comunes y no palabras reservadas."
+          },
+          {
+            "id": "3.2",
+            "pregunta": "¿Qué palabra reservada se utiliza para crear una instancia de una clase?",
+            "opciones": [
+              "this",
+              "new",
+              "static",
+              "super"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "La palabra 'new' se utiliza para crear nuevas instancias de objetos, asignando memoria en el heap y llamando al constructor de la clase."
+          },
+          {
+            "id": "3.3",
+            "pregunta": "¿Qué palabra reservada define una condición en Java?",
+            "opciones": [
+              "for",
+              "if",
+              "switch",
+              "else"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "'if' es la palabra clave fundamental para definir condiciones en Java. Permite ejecutar código basado en la evaluación de una expresión booleana."
+          },
+          {
+            "id": "3.4",
+            "pregunta": "¿Cuál es el propósito de la palabra reservada null?",
+            "opciones": [
+              "Indicar un valor numérico vacío",
+              "Declarar una nueva clase",
+              "Representa la ausencia de un valor o referencia",
+              "Detiene la ejecución de un bucle"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "'null' es un literal que representa la ausencia de una referencia a un objeto; indica que una variable no apunta a ninguna dirección de memoria."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 4",
+        "preguntas": [
+          {
+            "id": "4.1",
+            "pregunta": "¿Cuál es la diferencia entre declarar e iniciar una variable?",
+            "opciones": [
+              "Declarar crea una variable, inicializar asigna un valor",
+              "Declarar asigna un valor; inicializar la crea",
+              "No hay diferencia",
+              "Declarar es opcional en Java"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "Declarar una variable (int numero;) reserva memoria y asigna un nombre, mientras que inicializar (numero = 5;) asigna un valor específico a esa variable."
+          },
+          {
+            "id": "4.2",
+            "pregunta": "¿Qué sucede si intentas usar una variable local sin inicializar?",
+            "opciones": [
+              "El programa lanza un error en tiempo de ejecución",
+              "El programa no compila",
+              "Se asigna un valor predeterminado automáticamente",
+              "La variable toma el valor de otra variable"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El compilador de Java requiere que las variables locales sean inicializadas antes de usarse, generando un error de compilación si se intenta usar sin inicializar."
+          },
+          {
+            "id": "4.3",
+            "pregunta": "¿Qué palabra clave se utiliza para declarar una variable compartida por todas las instancias de una clase?",
+            "opciones": [
+              "public",
+              "private",
+              "final",
+              "static"
+            ],
+            "respuestaCorrecta": 3,
+            "explicacion": "La palabra clave 'static' hace que una variable pertenezca a la clase en lugar de a instancias específicas, siendo compartida por todos los objetos."
+          },
+          {
+            "id": "4.4",
+            "pregunta": "¿Cuál es el ámbito de una variable declarada dentro de un método?",
+            "opciones": [
+              "clase",
+              "método",
+              "paquete",
+              "global"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Las variables declaradas dentro de un método son locales a ese método y solo pueden ser accedidas dentro del mismo, desde la declaración hasta el fin del bloque."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 5",
+        "preguntas": [
+          {
+            "id": "5.1",
+            "pregunta": "¿Qué tipo de dato usarías para almacenar el salario de un empleado?",
+            "opciones": [
+              "boolean",
+              "String",
+              "float",
+              "int"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "El tipo 'float' es adecuado para valores monetarios porque puede almacenar números decimales, necesarios para representar con precisión cantidades de dinero."
+          },
+          {
+            "id": "5.2",
+            "pregunta": "¿Qué sucede si intentas asignar un valor double a un int sin casting?",
+            "opciones": [
+              "El programa lanza un error en tiempo de ejecución",
+              "El programa lanza un error en tiempo de compilación",
+              "La conversión se realiza automáticamente",
+              "El valor se trunca"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Java no permite conversiones implícitas que puedan perder datos (de double a int), por lo que el compilador genera un error para evitar pérdida de precisión."
+          },
+          {
+            "id": "5.3",
+            "pregunta": "¿Cuál es el valor predeterminado de una variable boolean no inicializada?",
+            "opciones": [
+              "true",
+              "false",
+              "null",
+              "no tiene valor predeterminado"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Las variables boolean de tipo miembro (no locales) tienen 'false' como valor predeterminado cuando no se inicializan explícitamente."
+          },
+          {
+            "id": "5.4",
+            "pregunta": "¿Qué palabra clave se utiliza para crear una instancia de un objeto?",
+            "opciones": [
+              "new",
+              "this",
+              "static",
+              "return"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La palabra clave 'new' se utiliza para crear instancias de objetos, reservando memoria en el heap y llamando al constructor de la clase."
+          },
+          {
+            "id": "5.5",
+            "pregunta": "¿Qué sucede si intentas convertir un número decimal a entero usando casting?",
+            "opciones": [
+              "Lanza un error",
+              "Se redondea automáticamente",
+              "Se trunca el valor decimal",
+              "El valor decimal se conserva"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "Al convertir un número decimal a entero mediante casting, Java simplemente elimina la parte decimal sin redondear. Por ejemplo, (int)5.9 se convierte en 5."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 6",
+        "preguntas": [
+          {
+            "id": "6.1",
+            "pregunta": "¿Qué tipo de literal es true en Java?",
+            "opciones": [
+              "entero",
+              "booleano",
+              "caracter",
+              "cadena"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "'true' es un literal booleano en Java, que representa un valor de verdad y solo puede asignarse a variables de tipo boolean."
+          },
+          {
+            "id": "6.2",
+            "pregunta": "¿Qué prefijo se utiliza para representar números en binario?",
+            "opciones": [
+              "0b",
+              "0x",
+              "0",
+              "bin"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "El prefijo '0b' se utiliza en Java para representar números en formato binario, como en 0b1010 que equivale a 10 en decimal."
+          },
+          {
+            "id": "6.3",
+            "pregunta": "¿Cuál de los siguientes es un literal válido?",
+            "opciones": [
+              "'Hola'",
+              "123_456",
+              "false_",
+              "null123"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "123_456 es un literal numérico válido en Java desde Java 7, donde los guiones bajos pueden usarse para mejorar la legibilidad de valores numéricos."
+          },
+          {
+            "id": "6.4",
+            "pregunta": "¿Qué representa el literal null?",
+            "opciones": [
+              "Una cadena vacía",
+              "Un valor booleano falso",
+              "La ausencia de valor",
+              "Un número negativo"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "'null' es un literal especial que representa la ausencia de referencia a un objeto, indicando que una variable no apunta a ninguna dirección de memoria."
+          },
+          {
+            "id": "6.5",
+            "pregunta": "¿Cuál sería el resultado de ejecutar el siguiente código?\n```\nint valor = 0b1010;\nSystem.out.println(valor);\n```",
+            "opciones": [
+              "10",
+              "5",
+              "1010",
+              "Error de compilación"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "0b1010 es un literal binario que representa 10 en decimal (1*2^3 + 0*2^2 + 1*2^1 + 0*2^0 = 8 + 0 + 2 + 0 = 10)."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 7",
+        "preguntas": [
+          {
+            "id": "7.1",
+            "pregunta": "¿Qué palabra clave se utiliza para declarar una constante en Java?",
+            "opciones": [
+              "const",
+              "static",
+              "final",
+              "constant"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "La palabra clave 'final' se utiliza para declarar constantes en Java. Una vez asignado un valor a una variable final, no puede ser modificado."
+          },
+          {
+            "id": "7.2",
+            "pregunta": "¿Qué sucede si intentas modificar el valor de una constante?",
+            "opciones": [
+              "El programa lanza un error en tiempo de ejecución",
+              "El programa no compila",
+              "La constante toma el nuevo valor sin problemas",
+              "Se lanza una advertencia pero compila"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El compilador detecta cualquier intento de modificar una variable 'final' y genera un error de compilación con el mensaje 'cannot assign a value to final variable'."
+          },
+          {
+            "id": "7.3",
+            "pregunta": "¿Qué convención se recomienda para nombrar las constantes?",
+            "opciones": [
+              "camelCase",
+              "snake_case",
+              "PascalCase",
+              "UPPER_CASE"
+            ],
+            "respuestaCorrecta": 3,
+            "explicacion": "Las constantes se nombran convencionalmente usando UPPER_CASE (mayúsculas con guiones bajos), como MAX_VALUE, para distinguirlas visualmente de las variables normales."
+          },
+          {
+            "id": "7.4",
+            "pregunta": "¿Cuál es el resultado del siguiente código?\n```\npublic class Prueba{\n    public static final int LIMITE = 10;\n    public static void main (String[] args){\n        LIMITE = 20;\n        System.out.println(LIMITE);\n    }\n}\n```",
+            "opciones": [
+              "20",
+              "10",
+              "Error de compilación",
+              "Error en tiempo de ejecución"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "Se produce un error de compilación porque se intenta modificar el valor de la constante LIMITE que fue declarada como 'final', lo cual prohíbe cualquier reasignación."
+          },
+          {
+            "id": "7.5",
+            "pregunta": "¿Qué se puede usar para definir un conjunto de constantes relacionadas?",
+            "opciones": [
+              "final",
+              "enum",
+              "abstract",
+              "static"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Los 'enum' (enumeraciones) en Java son ideales para definir un conjunto de constantes relacionadas, proporcionando seguridad de tipo y funcionalidades adicionales sobre simples constantes."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 8",
+        "preguntas": [
+          {
+            "id": "8.1",
+            "pregunta": "¿Qué operador devuelve el resto de una división?",
+            "opciones": [
+              "+",
+              "%",
+              "/",
+              "-"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El operador módulo (%) devuelve el resto de una división. Por ejemplo, 7 % 3 = 1, porque 7 dividido por 3 es 2 con un resto de 1."
+          },
+          {
+            "id": "8.2",
+            "pregunta": "¿Cuál es el resultado de la expresión `5>3 && 3<2`?",
+            "opciones": [
+              "true",
+              "false",
+              "null",
+              "Error de compilación"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El operador && (AND lógico) requiere que ambas condiciones sean verdaderas. Aquí, 5>3 es true pero 3<2 es false, por lo que la expresión completa es false."
+          },
+          {
+            "id": "8.3",
+            "pregunta": "¿Qué operador tiene la mayor precedencia?",
+            "opciones": [
+              "+",
+              "-",
+              "&&",
+              "++"
+            ],
+            "respuestaCorrecta": 3,
+            "explicacion": "El operador de incremento (++) tiene la mayor precedencia entre los listados. Los operadores unarios como ++ y -- tienen mayor precedencia que los operadores aritméticos y lógicos."
+          },
+          {
+            "id": "8.4",
+            "pregunta": "¿Qué hace el operador ternario ? :",
+            "opciones": [
+              "Divide dos números",
+              "Compara dos valores",
+              "Evalúa una condición y devuelve el resultado",
+              "Asigna un valor"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "El operador ternario (condición ? valor1 : valor2) evalúa una condición y devuelve valor1 si es verdadera o valor2 si es falsa. Es una forma compacta de expresar una decisión if-else."
+          },
+          {
+            "id": "8.5",
+            "pregunta": "¿Cuál es el resultado de 10 + 2 * 3?",
+            "opciones": [
+              "36",
+              "16",
+              "12",
+              "20"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Por las reglas de precedencia, la multiplicación se realiza antes que la suma. Primero 2*3=6, luego 10+6=16. No es 36 porque no se evalúa como (10+2)*3."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 9",
+        "preguntas": [
+          {
+            "id": "9.1",
+            "pregunta": "¿Qué tipo de conversión ocurre automáticamente en Java?",
+            "opciones": [
+              "Implícita",
+              "Explícita",
+              "casting",
+              "Ninguna"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La conversión implícita ocurre automáticamente cuando se asigna un valor de un tipo menor a uno mayor sin riesgo de pérdida de datos, como de int a double."
+          },
+          {
+            "id": "9.2",
+            "pregunta": "¿Qué palabra clave se usa para realizar una conversión explícita?",
+            "opciones": [
+              "convert",
+              "(tipo)",
+              "as",
+              "No se necesita palabra clave"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El casting en Java se realiza utilizando paréntesis y el tipo de destino, como en (int)3.14, que convierte explícitamente el valor double a int."
+          },
+          {
+            "id": "9.3",
+            "pregunta": "¿Qué sucede si conviertes un double a un int usando casting?",
+            "opciones": [
+              "Se redondea automáticamente",
+              "Se trunca la parte decimal",
+              "Se lanza un error",
+              "No sucede nada, se conserva el valor original"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Al convertir un double a int mediante casting, Java elimina la parte decimal sin redondear. Por ejemplo, (int)3.9 se convierte en 3, no en 4."
+          },
+          {
+            "id": "9.4",
+            "pregunta": "¿Cuál es el método para convertir un String a un int?",
+            "opciones": [
+              "Integer.toInt",
+              "String.toInt",
+              "Integer.parseInt",
+              "String.valueOf"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "Integer.parseInt() es el método estático que convierte una representación textual de un número en un valor entero primitivo. Por ejemplo, Integer.parseInt(\"123\") devuelve 123."
+          },
+          {
+            "id": "9.5",
+            "pregunta": "¿Qué término describe la conversión automática de un int a Integer?",
+            "opciones": [
+              "Boxing",
+              "Autoboxing",
+              "Unboxing",
+              "Casting"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Autoboxing es la conversión automática que hace Java entre tipos primitivos y sus clases envoltorio correspondientes. Por ejemplo, int a Integer o double a Double."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 10",
+        "preguntas": [
+          {
+            "id": "10.1",
+            "pregunta": "¿Qué símbolo se usa para comenzar un comentario de línea única en Java?",
+            "opciones": [
+              "#",
+              "//",
+              "/*",
+              "/**"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El símbolo // se usa para comentarios de una sola línea en Java. Todo lo que sigue a // en la misma línea es ignorado por el compilador."
+          },
+          {
+            "id": "10.2",
+            "pregunta": "¿Qué tipo de comentario se utiliza para documentar clases y métodos?",
+            "opciones": [
+              "Comentarios de línea única",
+              "Comentarios de múltiples líneas",
+              "Comentarios Javadoc",
+              "Ninguno de los anteriores"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "Los comentarios Javadoc (/** ... */) son especiales para documentación. Generan documentación HTML automáticamente y soportan etiquetas como @param, @return, etc."
+          },
+          {
+            "id": "10.3",
+            "pregunta": "¿Qué herramienta genera documentación a partir de comentarios en Java?",
+            "opciones": [
+              "DocGenerator",
+              "Javadoc",
+              "JavaComments",
+              "DocumentationBuilder"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Javadoc es la herramienta oficial de Oracle que procesa los comentarios especiales /** ... */ y genera documentación HTML estructurada para APIs Java."
+          },
+          {
+            "id": "10.4",
+            "pregunta": "¿Qué ocurre con los comentarios al compilar un programa?",
+            "opciones": [
+              "Se ejecutan como parte del código",
+              "Se eliminan del programa compilado",
+              "Generan un archivo separado con las notas",
+              "Generan errores si no están bien formateados"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Los comentarios son completamente ignorados por el compilador y no aparecen en el bytecode generado. Solo sirven para los desarrolladores que leen el código fuente."
+          },
+          {
+            "id": "10.5",
+            "pregunta": "¿Cuál es el propósito principal de los comentarios?",
+            "opciones": [
+              "Optimizar el rendimiento del código",
+              "Mejorar la comprensión y documentación del código",
+              "Crear variables temporales",
+              "Depurar el programa"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Los comentarios sirven para explicar el propósito, la lógica y el funcionamiento del código a otros programadores o al mismo desarrollador en el futuro."
+          }
+        ]
+      }
+    ]
+  }

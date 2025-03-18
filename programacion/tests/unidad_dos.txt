@@ -1,0 +1,263 @@
+Programación Evaluación.
+
+Tema 2.
+    Parte 1:
+            1. ¿Cuál es el proposito del método main en Java?
+                a) Es el punto de entrada del programa (correcta)
+                b) Define el nombre del paquete
+                c)Decla las variables globales
+                d) Importa bibliotecas externas
+            2. ¿Qué bloque se ejecuta una vez al cargar la clase?
+                a) Bloque de inicialización
+                b) Bloque estático (correcta)
+                c) Método principal
+                d) Constructor
+            3. ¿Qué ocurre si un programa Java no tiene un método main válido?
+                a) Se ejecuta correctamente
+                b) El programa no compila
+                c) El programa lanza un error en tiempo de ejecución (correcta)
+                d) Nada, pero muestra una advertencia
+            4. ¿Cuál es la principal diferencia entre un bloque de inicialización y un bloque estático?
+                a) El bloque estático solo se ejecuta al crear una instancia
+                b) El bloque de inicialización se ejecuta una vez por clase
+                c) El bloque de inicialización se ejecuta cada vez que se crea una instancia (correcta)
+                d) No hay diferencias significativas
+
+    Parte 2:
+            1. ¿Qué identificador es valido en Java?
+                a) 2variable
+                b) _nombre(correcta)
+                c) public
+                d) precio@
+            2. ¿Qué convencióon se recomienda para nombrar las clases?
+                a) camelCase(correcta)
+                b) snake_case
+                c) PascalCase
+                d) UPPER_CASE
+            3. ¿Cuál de las siguientes opciones NO es una regla para los identificadores
+                a) No pueden contener espacios
+                b) No pueden ser una palabra reservada
+                c) Deben comnenzar con una letra, _ o $
+                d) Pueden contener cualquier carácter especial (correcta)
+            4. ¿Qué sucede si usas una palabra reservada como identificador?
+                a) El programa compila, pero lanza un error de ejecución
+                b) El programa compila sin problemas
+                c) El programa no compila y lanza un error de sintaxis (correcta)
+                d) No sucede nada , pero muestra una advertencia
+
+    Parte 3:
+            1. ¿Cuál de las siguientes es una palabra reservada en Java?
+                a) valor
+                b) public (correcta)
+                c) variable
+                d) imprimir
+            2. ¿Qué palabra reservada se utiliza para crear una instancia de una clase?
+                a) this
+                b) new (correcta)
+                c) static
+                d) super
+            3. ¿Qué palabra reservada define una condición en Java?
+                a) for
+                b) if (correcta)
+                c) switch
+                d) else
+            4. ¿Cuál es el propósito de la palabra reservada null?
+                a) indicar un valor numérico vacio
+                b) Declarar una nueva clase
+                c) Representa la ausencia de un valor o referencia(correcta)
+                d) Detiene la ejecución de un bucle
+
+    Parte 4:
+            1. ¿Cúal es la diferencia entre declarar e iniciar una variable?
+                a) Declarar crea una variable, inicializar asigna un valor (correcta)
+                b) Declarar asigna un valor; inicializar la crea
+                c) No hay diferencia
+                d) Declarar es opcional en Java
+            2. ¿Qué sucede si intentas usar una variable local sin inicializar?
+                a) El programa lanza un error en tiempo de ejecución
+                b) El programa no compila (correcta)
+                c) Se asigna un valor predeterminado automáticamente
+                d) la variable toma el valor de otra variable
+            3. ¿Qué palabra clave se utiliza para declarar una variable compartida por todas las instancias de una clase?
+                a) public
+                b) private
+                c) final
+                d) static (correcta)
+            4.  ¿Cuál es el ámbito de una variable declarada dentro de un método?
+                a) clase
+                b) método (correcta)
+                c) paquete
+                d) global
+
+    Parte 5:
+            1. ¿Qué tipo de dato usarías para almacenar el salario de un empleado?
+                a) boolean
+                b) String
+                c) float (correcta)
+                d) int
+            2. ¿Qué sucede si intentas asignar un valor double a un int sin casting?
+                a) El progrma lanza un error en tiempo de ejecución
+                b) El programa lanza un error en tiempo de compilación (correcta)
+                c) La conversión se realiza automáticamente
+                d) El valor se trunca
+            3. ¿Cuál es el valor predeterminado de una variable boolean no inicializada?
+                a) true
+                b) false (correcta)
+                c) null
+                d) no tiene valor predeterminado
+            4. ¿Qué palabra clave se utiliza para crear una instancia de un objeto?
+                a) new (correcta)
+                b) this
+                c) static
+                d) return
+            5. ¿Qué sucede si intentas convertir un número decimal a entero usando casting?
+                a) Lanza un error
+                b) Se redondea automáticamente
+                c) Se trunca el valor decimal (correcta)
+                d) El valor decimal se conserva
+
+    Parte 6:
+            1. ¿Qué tipo de literal es true en Java?
+                a) entero
+                b) booleano (correcta)
+                c) caracter
+                d) cadena
+            2. ¿Qué prefijo se utiliza para representar números en binario
+                a) 0b (correcta)
+                b) 0x
+                c) 0
+                d) bin
+            3. ¿Cuál de los siguientes es un literal válido?
+                a) 'Hola'
+                b) 123_456(correcta)
+                c) false_
+                d) null123
+            4. ¿Qué representa el linteral null?
+                a) Una cadena vacía
+                b) Un valor boolenao falso
+                c) La ausencia de valor (correcta)
+                d) Un número negativo
+            5. ¿Cual sería el resultado de ejecutar el siguiente código?
+                '''
+                    int valor = 0b1010;
+                    System.out.println(valor);
+                '''
+                a) 10 (correcta)
+                b) 5
+                c) 1010
+                d) Error de compilación
+
+    Parte 7:
+            1. ¿Qué palabra clave se utiliza para declarar una constante en Java?
+                a) const
+                b) static
+                c) final (correcta)
+                d) constant
+            2. ¿Qué sucede si intentas modificar el valor de una constante?
+                a) El programa lanza un error en tiempo de ejecución
+                b) El programa no compila (correcta)
+                c) La constatne toma el nuevo valor sin problemas
+                d) Se lanza una advertencia pero compila
+            3. ¿Qué convención se recomienda para nombrar las constantes?
+                a) camelCase
+                b) snake_case
+                c) PascalCase
+                d) UPPER_CASE (correcta)
+            4. ¿Cuál es el resultado del siguiente código?
+                '''
+                    public class Prueba{
+                        public static final int LIMITE = 10;
+                        public static void main (String[] args){
+                            LIMITE = 20;
+                            System.out.println(LIMITE);
+                        }
+                    }
+                '''
+                a) 20
+                b) 10
+                c) Error de compilación (correcta)
+                d) Error en tiempo de ejecución
+            5.¿Qué se puede usar para definir un conjunto de constantes relacionadas?
+                a) final
+                b) enum
+                c)abstract
+                d)static
+
+    Parte 8:
+            1. ¿ Qué oeprador devuelve el resto de una división?
+                a) +
+                b) % (correcta)
+                c) /
+                d) -
+            2. ¿Cuál es el resultado de la expresión `5>3 && 3<2`
+                a) true
+                b) false
+                c) null
+                d) Error de compilación
+            3. ¿Qué opeador tiene la mayor precedencia?
+                a) +
+                b) -
+                c) &&
+                d) ++ (correcta)
+            4. ¿Qué hace el operador ternario ? :
+                a) Divide dos numeros
+                b) Compara dos valores
+                c) Evalúa una condición y devuelve el resultado (correcta)
+                d) Asigna un valor
+            5. ¿Cuál es el resultado de 10 + 2 * 3
+                a) 36
+                b) 16  (correcta)
+                c) 12
+                d) 20
+    Parte 9:
+            1. ¿Qué tipo de conversión ocurre automáticamente en Java?
+                a) Implicita (correcta)
+                b) Explicita
+                c) casting
+                d) Ninguna
+            2. ¿Qué palabra clave se us para realizar una conviersión explicita?
+                a) convert
+                b) (tipo)
+                c) as
+                d) No se necesita palabra clave
+            3. ¿Qué sucede si conviertes un double a un int usando casting?
+                a) Se redondea automaticamente
+                b) Se trunca la parte decimal (correcta)
+                c) Se lanza un error
+                d) No sucede nada , se conserva el valor original
+            4. ¿Cuál es el método para convertir un String a un int?
+                a) Integer.toInt
+                b) String.toInt
+                c) Integer.parseInt (correcta)
+                d) String.valueOf
+            5.¿Qué termino describe la conversión automática de un int a Integer?
+                a) Boxing
+                b) Autoboxing ((correcta))
+                c) Unboxing
+                d) Casting
+    Parte 10:
+            1. ¿Qué símbolo se usa para comenzar un comentario de línea única en Java?
+                a) #
+                b) //(correcta)
+                c) /*
+                d) /**
+            2. ¿Qué tipo de comentario se utiliza para documentar clases y métodos?
+                a) Comentarios de línea única
+                b) Comentarios de múltiples líneas
+                c) Comentarios Javadoc (correcta)
+                d) Ninguno de los anteriores
+            3. ¿Qué herramienta genera documentación a partir de comentarios en Java?
+                a) DocGenerator
+                b) Javadoc (correcta)
+                c) JavaComments
+                d) DocumentationBuilder
+            4. ¿Qué ocurre con los comentarios al compilar un programa?
+                a) Se ejecutan como parte del código.
+                b) Se eliminan del programa compilado.(correcta)
+                c) Generan un archivo separado con las notas.
+                d) Generan errores si no están bien formateados.
+            5. ¿Cuál es el propósito principal de los comentarios?
+                a) Optimizar el rendimiento del código.
+                b) Mejorar la comprensión y documentación del código. (correcta)
+                c) Crear variables temporales.
+                d) Depurar el programa.
