@@ -1,0 +1,141 @@
+{
+    "evaluacion": "Programación Evaluación",
+    "tema": "Tema 3",
+    "partes": [
+        {
+            "titulo": "Parte 1",
+            "preguntas": [
+                {
+                    "id":"1.1",
+                    "pregunta":"¿Qué estructura de selección se usa para evaluar múltiples condiciones?",
+                    "opciones": [
+                        "if",
+                        "else if",
+                        "switch",
+                        "ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta": 2,
+                    "explicacion":"La estructura switch es la diseñada específicamente para evaluar múltiples condiciones de manera eficiente."
+                },
+                {
+                    "id":"1.2",
+                    "pregunta": "¿Qué palabra clave detiene la ejecución en un bloque switch?",
+                    "opciones":[
+                        "stop",
+                        "halt",
+                        "break",
+                        "exit"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"La palabra clave break es la que detiene la ejecución de un bloque switch. Sin esta instrucción, el código continuaría ejecutando todos los casos siguientes, un comportamiento conocido como fall-through."
+                },
+                {
+                    "id":"1.3",
+                    "pregunta":"¿Qué ocurre si no se incluye un default en un switch?",
+                    "opciones":[
+                        "se lanza un error de compilación",
+                        "No ocurre nada si no hay coincidencias",
+                        "Siemrpe se ejecuta el ultimo caso",
+                        "El programa se finaliza"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"El default es opcional y especifica qué hacer cuando ninguno de los casos coincide con el valor evaluado. Si no existe default y ningún caso coincide, el bloque switch se omite por completo y la ejecución continúa con la siguiente instrucción."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 2",
+            "preguntas":[
+                {
+                    "id":"2.1",
+                    "pregunta": "¿Cuál de estas estructuras garantiza al menos una ejecución del bloque de código?",
+                    "opciones":[
+                        "for",
+                        "while",
+                        "do-while",
+                        "ninguna"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"do-while garantiza que el bloque de código se ejecutará al menos una vez, ya que la condición se evalúa al final"
+                },
+                {
+                    "id":"2.2",
+                    "pregunta":"¿Qué bucle usarías si conoces de antemano el número de iteraciones necesarias?",
+                    "opciones":[
+                        "for",
+                        "while",
+                        "do-while",
+                        "todos son validos"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"El bucle for está diseñado específicamente para situaciones donde conocemos de antemano el número de iteraciones."
+                },
+                {
+                    "id":"2.3",
+                    "pregunta":"¿Qué ocurre si la condición de un while nunca es falsa",
+                    "opciones":[
+                        "El programa lanza un error",
+                        "El bucle se ejecuta infinitamente",
+                        "El programa finaliza automaticamente",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"un bloque while se ejecuta mientras la condición sea verdadera , entrando en un bucle si siempre se cumple"
+                },
+                {
+                    "id":"2.4",
+                    "pregunta":"¿Cuál es la diferencia entre un bucle for y for-each?",
+                    "opciones":[
+                        "for-each requiere indices explicitos",
+                        "for-each solo funciona con array y colecciones",
+                        "for es más eficiente que for-each",
+                        "for-each nmo tiene diferencias significativas respecto al for"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"El bucle for-each está diseñado específicamente para iterar a través de elementos de una colección o array de manera sencilla, sin necesidad de manejar índices o iteradores explícitamente"
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 3",
+            "preguntas":[
+                {
+                    "id":"3.1",
+                    "pregunta":"¿Qué hace la instrucción break?",
+                    "opciones":[
+                        "Salta a la siguiente iteración del buble",
+                        "Finaliza el programa",
+                        "Sale de un bucle o estructura switch",
+                        "Lanza una excepción"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"La instrucción break se utiliza para salir inmediatamente de un bucle o una estructura switch"
+                },
+                {
+                    "id":"3.2",
+                    "pregunta":"¿Cuál es la principal diferencia entre break y continue?",
+                    "opciones":[
+                        "break finaliza el bucle; continue omite el resto de la iteracción actual",
+                        "break solo funciona en switch, continue en bubles",
+                        "break lanza una excepción, continue no",
+                        "No hay diferencias"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"break finaliza el bucle; continue omite el resto de la iteracción actual"
+                },
+                {
+                    "id":"3.4",
+                    "pregunta":"¿Qué palabra clave se usa para lanzar una excepción?",
+                    "opciones":[
+                        "throw",
+                        "catch",
+                        "break",
+                        "return"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La instrucción throw se utiliza para lanzar excepciones, lo que transfiere el control al bloque catch correspondiente."
+                }
+            ]
+        }
+    ]
+}
