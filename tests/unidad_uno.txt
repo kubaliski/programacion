@@ -1,0 +1,86 @@
+Programación Evaluación.
+
+Tema 1 
+
+	Parte 1:
+		1. ¿Qué tipo de dato usarías para representar una letra?
+			a)int 
+			b)char (correcta)
+			c)String
+		2. ¿Cuál es el resultado de la operación 10 / 3 en Java con enteros?
+			a)3.33
+			b) 3 (correcta)
+			c) Error
+		3. ¿Qué operador se usa para concatenar cadenas en Java?
+			a) +
+			b) - (correcta)
+			c) *
+	Parte 2:
+		1.¿Qué parte de un algoritmo representa el resultado final?
+			a) Entrada
+			b) Proceso 
+			c) Salida (correcta)
+		2. ¿Qué es un diagrama de flujo?
+			a) Un lenguaje de programación.
+			b) Una representación gráfica de un algoritmo (correcta)
+			c) Un programa que ejecuta instrucciones
+		3. ¿Cuál de los siguientes NO es una característica de un algoritmo?
+			a) Precisión
+			b) Finitud
+			c) Aleatoriedad
+
+	Parte 3:
+		1.¿Cuál de los siguientes es un lenguaje de alto nivel?
+			a)Ensamblador
+			b)Java (correcta)
+			c)Código Máquina
+		2.¿Qué característica describe mejor a los lenguajes compilados?
+			a)Se ejecutan línea por línea
+			b) Son más rápidos en ejecución(correcta)
+			c) No necesitan un compilador
+		3.¿Qué hace la JVM en Java?
+			a) Traduce el código fuente a código máquina
+			b) Permite que los programas sean portables 
+			c) Ambas respuestas son correctas (correcta)	
+	
+	Parte 4: 
+		1. ¿ Qué es el JDK?
+			a) un editor de texto
+			b) Un compilador y entorno de Java (correcta)
+			c) UN sistema operativo
+
+		2. ¿Qué comando se usa para compilar un archivo Java en la terminal?
+			a) java
+			b) compile
+			c) javac (correcta)
+		3 ¿Cuál es la función principal de un IDE?
+		 	a) Escribir código en binario
+			b) Simplificar el desarrollo con herramientas integradas (correctas)
+			c) Ejecutar comandos en la terminal
+
+	Parte 5:
+		1. ¿Qué tipo d error ocurre si olvidas un punto y coma en Java?
+			a) Error Lógico
+			b) Error de Sintaxis (correcta)
+			c) Error de ejecución
+		2. ¿Cuál de los siguientes es un error lógico?
+			a) Dividir entre cero
+			b) Usar un operador incorrecto en un cálculo
+			c) olvidar declarar una variable
+		3. ¿Qué herramienta puedes usar para depurar un programa en java?
+			a) Notepad
+			b) Eclipse (correcta)
+			c) Compilador
+		4. ¿Cuál de las siguientes NO es una característica de un algoritmo?
+			a) Debe ser finito
+			b) Debe ser preciso
+			c) Debe ser aleatorio (correcta)
+		5. ¿Qué tipo de error ocurre al intentar dividir entre cero?
+			a) Error lógico
+			b) Error de ejecución
+			c) Error de sintaxis
+
+		6. ¿Qué herramienta de control de versiones se utiliza comúnmente en proyectos de programación?
+			a) git (correcta)
+			b) Eclipse 
+			c) JVM
