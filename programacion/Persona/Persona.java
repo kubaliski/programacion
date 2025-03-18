@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Clase que representa a una Persona con sus atributos y comportamientos
  * básicos.
  *
- * @author Tu_Nombre
+ * @author ACC
  * @version 1.0
  */
 public class Persona {
