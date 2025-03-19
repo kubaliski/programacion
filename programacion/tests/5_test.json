@@ -1,0 +1,188 @@
+{
+    "evaluacion": "Programación Evaluación",
+    "tema": "Tema 5",
+    "partes": [
+      {
+        "titulo": "Parte 1",
+        "preguntas": [
+          {
+            "id": "1.1",
+            "pregunta": "¿Qué define el estado de un objeto en Java?",
+            "opciones": [
+              "Los métodos de una clase",
+              "Los atributos de una clase",
+              "La dirección en memoria"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El estado de un objeto se define mediante sus atributos. Es el conjunto de valores que describen al objeto en un momento dado"
+          },
+          {
+            "id": "1.2",
+            "pregunta": " ¿Qué caracteriza el comportamiento de un objeto?",
+            "opciones": [
+              "Los atributos que lo describen.",
+              "La cantidad de memoria que ocupa.",
+              "Los métodos que definen sus acciones.",
+              "Su identidad única"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "El comportamiento de un objeto define lo que puede hacer o cómo puede interactuar con otros objetos. En Java, el comportamiento se implementa mediante métodos"
+          },
+          {
+            "id": "1.3",
+            "pregunta": "¿Qué determina la identidad de un objeto?",
+            "opciones": [
+              "Su estado y comportamiento",
+              "Su posiciuón en el código fuente",
+              "Los valores de sus atributos ",
+              "Su posición única en memoria"
+            ],
+            "respuestaCorrecta": 3,
+            "explicacion": "Dos objetos pueden tener el mismo estado y comportamiento, pero son diferentes debido a su identidad. En Java, la identidad está asociada con la dirección de memoria"
+          },
+          {
+            "id": "1.4",
+            "pregunta": " Si dos objetos tienen el mismo estado y comportamiento, pero ocupan direcciones de memoria diferentes, entonces:",
+            "opciones": [
+              "Son objetos diferentes",
+              "Son el mismo objeto",
+              "No pueden tener el mismo estado",
+              "Depende del compilador de Java"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "Aunque persona1 y persona2 tienen el mismo estado (nombre y edad), son objetos  diferentes porque ocupan direcciones distintas en memoria."
+          },
+          {
+            "id": "1.5",
+            "pregunta": "¿Qué son los mensajes en la programación orientada a objetos",
+            "opciones": [
+              "Variables que almacenan información",
+              "Llamadas a métodos de un objeto",
+              "el flujo de control de un programa",
+              "La identidad de un objeto"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Un mensaje en Java es la forma en que un objeto invoca métodos de otro. Este mecanismo permite que los objetos interactúen entre sí."
+          },
+          {
+            "id": "1.6",
+            "pregunta": "Qué método de los siguientes cambiaría el estado de un objeto?",
+            "opciones": [
+              "un método que imprime información en la consola",
+              "un método que incrementa un atributo privado",
+              "un método que verifica la igualdad de dos objetos",
+              "ninguna de las anteriores"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "el estado de un objeto viene dado por sus atributos , modificarlos es modificar el estado"
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 2",
+        "preguntas": [
+          {
+            "id": "2.1",
+            "pregunta": "¿Qué diferencia hay entre una clase abstracta y una interfaz?",
+            "opciones": [
+              "Una clase abstracta puede tener métodos implementados, mientras que una interfaz solo puede tener declaraciones de métodos sin implementación",
+              "Una clase puede heredar de múltiples interfaces pero solo de una clase abstracta",
+              "Las interfaces pueden tener atributos con valores, las clases abstractas no",
+              "Las clases abstractas no pueden ser instanciadas directamente, mientras que las interfaces sí"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "Las clases abstractas pueden contener tanto métodos abstractos (sin implementar) como métodos con implementación concreta. Las interfaces tradicionalmente solo contienen declaraciones de métodos sin implementación (aunque en versiones modernas de algunos lenguajes como Java 8+ pueden incluir métodos por defecto). Además, una clase puede implementar múltiples interfaces pero solo puede heredar de una única clase abstracta."
+          },
+          {
+            "id": "2.2",
+            "pregunta": "¿Cuándo se utiliza la sobrecarga de métodos?",
+            "opciones": [
+              "Cuando necesitamos métodos con el mismo nombre pero diferentes parámetros para realizar operaciones similares",
+              "Cuando queremos ocultar un método de la clase padre en la clase hija",
+              "Cuando necesitamos ejecutar métodos en hilos separados",
+              "Cuando queremos evitar que un método sea accesible desde fuera de la clase"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La sobrecarga de métodos permite definir varios métodos con el mismo nombre pero con diferentes listas de parámetros (número, tipo u orden). Esto mejora la legibilidad del código al usar el mismo nombre para operaciones conceptualmente similares, como sumar dos enteros o dos números flotantes."
+          },
+          {
+            "id": "2.3",
+            "pregunta": "¿Qué ventajas ofrece el polimorfismo en el diseño de sistemas?",
+            "opciones": [
+              "Permite tratar objetos de diferentes clases de manera uniforme a través de una interfaz común",
+              "Permite crear objetos sin instanciar directamente las clases",
+              "Evita completamente los errores de compilación",
+              "Impide que se modifiquen las clases una vez creadas"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "El polimorfismo permite que objetos de diferentes clases respondan al mismo mensaje o método de diferentes maneras. Esto facilita la extensibilidad del código, reduce la dependencia entre clases, y permite escribir código que funciona con objetos de clases que aún no existen o que podrían añadirse en el futuro."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 3",
+        "preguntas": [
+          {
+            "id": "3.1",
+            "pregunta": "¿Qué principio de la orientación a objetos permite reutilizar atributos y métodos en una subclase?",
+            "opciones": [
+              "Polimorfismo",
+              "Herencia",
+              "Encapsulación",
+              "Abstracción"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "La herencia permite que una subclase reutilice atributos y métodos de su superclase."
+          },
+          {
+            "id": "3.2",
+            "pregunta": "¿Cuál es la principal diferencia entre agregación y composición?",
+            "opciones": [
+              "En la composición, los objetos tienen ciclos de vida independientes.",
+              "En la agregación, los objetos tienen ciclos de vida dependientes.",
+              "En la composición, los objetos comparten atributos.",
+              "En la agregación, los objetos desaparecen juntos."
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "En la composición, los objetos tienen ciclos de vida dependientes."
+          },
+          {
+            "id": "3.3",
+            "pregunta": "¿Qué ventaja tiene el encapsulamiento?",
+            "opciones": [
+              "Permite cambiar el valor de los atributos directamente.",
+              "Proporciona seguridad al proteger los datos internos.",
+              "Facilita la reutilización del código.",
+              "Permite que una clase tome múltiples formas."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El encapsulamiento protege los datos internos y asegura su integridad."
+          },
+          {
+            "id": "3.4",
+            "pregunta": "¿Qué modificador de visibilidad restringe el acceso a los atributos solo dentro de la clase?",
+            "opciones": [
+              "public",
+              "private",
+              "protected",
+              "default"
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El modificador private restringe el acceso a los atributos únicamente dentro de la clase."
+          },
+          {
+            "id": "3.5",
+            "pregunta": "En el contexto del polimorfismo, ¿qué permite la sobreescritura de métodos?",
+            "opciones": [
+              "Declarar métodos con el mismo nombre en una clase pero con diferentes parámetros.",
+              "Implementar métodos heredados de forma específica en una subclase.",
+              "Usar un método estático sin necesidad de instanciar la clase.",
+              "Definir métodos abstractos en una clase concreta."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "La sobreescritura permite implementar métodos heredados de manera específica en una subclase."
+          }
+        ]
+      }
+    ]
+  }
