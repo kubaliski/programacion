@@ -1,0 +1,336 @@
+{
+    "evaluacion": "Programación Evaluación",
+    "tema": "Tema 6",
+    "partes": [
+      {
+        "titulo": "Parte 1",
+        "preguntas": [
+          {
+            "id": "1.1",
+            "pregunta": "¿Qué representa el estado de un objeto?",
+            "opciones": [
+              "Sus métodos.",
+              "Sus atributos y sus valores actuales.",
+              "Su nombre.",
+              "Su identidad."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El estado de un objeto se define mediante sus atributos y los valores que tienen en un momento determinado."
+          },
+          {
+            "id": "1.2",
+            "pregunta": "¿Qué define el comportamiento de un objeto?",
+            "opciones": [
+              "Su ubicación en memoria.",
+              "Sus métodos.",
+              "Sus atributos.",
+              "Ninguna de las anteriores."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "El comportamiento de un objeto se define mediante los métodos que implementa, que determinan las operaciones que puede realizar."
+          },
+          {
+            "id": "1.3",
+            "pregunta": "¿Qué determina la identidad de un objeto?",
+            "opciones": [
+              "El estado del objeto.",
+              "La clase del objeto.",
+              "Su referencia en memoria.",
+              "Sus atributos."
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "La identidad de un objeto viene determinada por su referencia única en memoria, lo que permite diferenciar objetos incluso si tienen el mismo estado."
+          },
+          {
+            "id": "1.4",
+            "pregunta": "¿Qué sucede si dos objetos tienen el mismo estado?",
+            "opciones": [
+              "Son el mismo objeto.",
+              "Tienen identidades diferentes.",
+              "No se pueden comparar.",
+              "Ambos son referencias al mismo espacio de memoria."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Aunque dos objetos tengan exactamente los mismos valores en sus atributos (mismo estado), son entidades distintas con identidades diferentes si fueron creados con instancias separadas."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 2",
+        "preguntas": [
+          {
+            "id": "2.1",
+            "pregunta": "¿Qué ocurre si no defines un constructor en tu clase?",
+            "opciones": [
+              "No puedes crear objetos de la clase.",
+              "Se genera automáticamente un constructor sin parámetros.",
+              "El programa lanza un error en tiempo de compilación.",
+              "Los atributos no se inicializan correctamente."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Si no se define un constructor explícitamente, Java proporciona automáticamente un constructor por defecto sin parámetros que inicializa los atributos con valores predeterminados."
+          },
+          {
+            "id": "2.2",
+            "pregunta": "¿Qué diferencia hay entre un constructor y un método normal?",
+            "opciones": [
+              "Un constructor tiene tipo de retorno.",
+              "Un constructor puede llamarse varias veces manualmente.",
+              "Un constructor no tiene tipo de retorno y se ejecuta automáticamente.",
+              "No hay diferencias."
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "Los constructores se diferencian de los métodos normales en que no tienen tipo de retorno (ni siquiera void) y se ejecutan automáticamente cuando se crea un objeto mediante la palabra clave new."
+          },
+          {
+            "id": "2.3",
+            "pregunta": "¿Qué hace la palabra clave this en un constructor?",
+            "opciones": [
+              "Se refiere a un objeto externo.",
+              "Se usa para llamar a otro constructor.",
+              "Se usa para acceder a los atributos de la clase actual.",
+              "b y c son correctas."
+            ],
+            "respuestaCorrecta": 3,
+            "explicacion": "La palabra clave this tiene dos usos principales en un constructor: referirse a los atributos de la instancia actual y llamar a otro constructor de la misma clase."
+          },
+          {
+            "id": "2.4",
+            "pregunta": "¿Qué permite la sobrecarga de constructores?",
+            "opciones": [
+              "Usar el mismo nombre para múltiples constructores con diferentes parámetros.",
+              "Reutilizar un constructor en otra clase.",
+              "Inicializar atributos después de crear un objeto.",
+              "Ninguna de las anteriores."
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La sobrecarga de constructores permite definir múltiples constructores con el mismo nombre pero diferentes parámetros (en número, tipo u orden), facilitando diferentes formas de inicializar objetos."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 3",
+        "preguntas": [
+          {
+            "id": "3.1",
+            "pregunta": "¿Qué palabra clave se utiliza para crear un nuevo objeto en Java?",
+            "opciones": [
+              "new",
+              "create",
+              "object",
+              "instance"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "En Java, se utiliza la palabra clave 'new' para crear una nueva instancia de un objeto, seguida del constructor de la clase."
+          },
+          {
+            "id": "3.2",
+            "pregunta": "¿Qué sucede si dos variables apuntan al mismo objeto?",
+            "opciones": [
+              "Ambas referencias son independientes.",
+              "Las modificaciones en una afectan a la otra.",
+              "Generan un error en tiempo de ejecución.",
+              "No pueden coexistir."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Cuando dos variables apuntan al mismo objeto, las modificaciones realizadas a través de cualquiera de estas referencias afectarán al mismo objeto, ya que ambas variables contienen la misma referencia en memoria."
+          },
+          {
+            "id": "3.3",
+            "pregunta": "¿Qué ocurre si no se ejecuta el constructor al crear un objeto?",
+            "opciones": [
+              "El objeto no se inicializa.",
+              "Los atributos tienen valores aleatorios.",
+              "Los atributos toman valores predeterminados.",
+              "No es posible crear el objeto."
+            ],
+            "respuestaCorrecta": 3,
+            "explicacion": "No es posible crear un objeto sin ejecutar un constructor. En Java, cuando se usa la palabra clave 'new', siempre se invoca algún constructor de la clase."
+          },
+          {
+            "id": "3.4",
+            "pregunta": "¿Qué representa la referencia de un objeto?",
+            "opciones": [
+              "Su dirección en memoria.",
+              "Una copia del objeto.",
+              "Su comportamiento.",
+              "Sus atributos."
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La referencia de un objeto representa su dirección o ubicación en la memoria, permitiendo al programa localizar y acceder al objeto almacenado."
+          },
+          {
+            "id": "3.5",
+            "pregunta": "¿Qué método garantiza que se inicialicen los atributos del objeto al crearlo?",
+            "opciones": [
+              "Método main.",
+              "Método toString.",
+              "Constructor.",
+              "Ninguno"
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "El constructor es el método que garantiza la inicialización de los atributos del objeto al momento de su creación, asegurando que el objeto comience con un estado válido y consistente."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 4",
+        "preguntas": [
+          {
+            "id": "4.1",
+            "pregunta": "¿Qué palabra clave se utiliza para devolver un valor en un método?",
+            "opciones": [
+              "return",
+              "this",
+              "break",
+              "result"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La palabra clave 'return' se utiliza en Java para devolver un valor desde un método y finalizar su ejecución."
+          },
+          {
+            "id": "4.2",
+            "pregunta": "¿Qué ocurre si un método con tipo de retorno no incluye una instrucción return?",
+            "opciones": [
+              "Lanza un error de compilación.",
+              "Devuelve un valor predeterminado.",
+              "El programa lanza un error en tiempo de ejecución.",
+              "El método se ejecuta pero no devuelve nada."
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "Si un método declara un tipo de retorno y no incluye la instrucción return, el compilador detectará este error y no permitirá compilar el programa, exigiendo que todos los caminos de ejecución terminen con un return apropiado."
+          },
+          {
+            "id": "4.3",
+            "pregunta": "¿Qué permite la sobrecarga de métodos?",
+            "opciones": [
+              "Crear métodos con el mismo nombre pero diferente cantidad o tipo de parámetros.",
+              "Utilizar métodos en diferentes clases.",
+              "Reducir la cantidad de líneas en un programa.",
+              "Crear métodos más rápidos."
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La sobrecarga de métodos permite definir múltiples métodos con el mismo nombre en la misma clase, siempre que difieran en el número, tipo o orden de los parámetros, facilitando interfaces más intuitivas."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 5",
+        "preguntas": [
+          {
+            "id": "5.1",
+            "pregunta": "¿Qué palabra clave se utiliza para declarar propiedades privadas?",
+            "opciones": [
+              "private",
+              "protected",
+              "final",
+              "static"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La palabra clave 'private' se utiliza para declarar propiedades o métodos que solo son accesibles desde dentro de la misma clase, implementando el principio de encapsulación."
+          },
+          {
+            "id": "5.2",
+            "pregunta": "¿Qué permite un método getter?",
+            "opciones": [
+              "Modificar una propiedad.",
+              "Obtener el valor de una propiedad.",
+              "Validar valores.",
+              "Inicializar propiedades."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Un método getter permite obtener el valor de una propiedad privada desde fuera de la clase, manteniendo el control sobre cómo se accede a los datos internos del objeto."
+          },
+          {
+            "id": "5.3",
+            "pregunta": "¿Cuál es la ventaja de usar encapsulación en las propiedades?",
+            "opciones": [
+              "Proteger las propiedades de acceso directo.",
+              "Permitir el acceso desde cualquier parte del código.",
+              "Reducir la complejidad del código.",
+              "Ninguna de las anteriores."
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La encapsulación permite proteger las propiedades de acceso directo, controlando cómo se modifican y acceden a través de métodos específicos, lo que mejora la seguridad y mantenibilidad del código."
+          },
+          {
+            "id": "5.4",
+            "pregunta": "¿Qué ocurre si se accede directamente a una propiedad privada desde otra clase?",
+            "opciones": [
+              "Se lanza un error en tiempo de compilación.",
+              "Se lanza un error en tiempo de ejecución.",
+              "La propiedad se modifica sin restricciones.",
+              "El acceso es permitido automáticamente."
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "Si se intenta acceder directamente a una propiedad marcada como private desde otra clase, el compilador detectará esta violación de acceso y generará un error en tiempo de compilación, impidiendo que el programa se construya."
+          }
+        ]
+      },
+      {
+        "titulo": "Parte 6",
+        "preguntas": [
+          {
+            "id": "6.1",
+            "pregunta": "¿Qué palabra clave se utiliza para declarar un método estático?",
+            "opciones": [
+              "static",
+              "final",
+              "class",
+              "void"
+            ],
+            "respuestaCorrecta": 0,
+            "explicacion": "La palabra clave 'static' se utiliza para declarar un método estático, que pertenece a la clase en lugar de a instancias específicas y puede invocarse sin crear un objeto."
+          },
+          {
+            "id": "6.2",
+            "pregunta": "¿Cuál es la principal diferencia entre un método estático y uno no estático?",
+            "opciones": [
+              "Los métodos estáticos no pueden llamarse directamente.",
+              "Los métodos estáticos pertenecen a la clase y no a una instancia.",
+              "Los métodos no estáticos no pueden acceder a miembros estáticos.",
+              "No hay diferencias."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Los métodos estáticos pertenecen a la clase y no a instancias específicas, lo que significa que pueden invocarse sin crear un objeto, mientras que los métodos no estáticos (de instancia) requieren un objeto para ser llamados."
+          },
+          {
+            "id": "6.3",
+            "pregunta": "¿Qué ocurre si un método estático intenta acceder a un miembro no estático?",
+            "opciones": [
+              "El programa lanza un error en tiempo de ejecución.",
+              "El programa lanza un error en tiempo de compilación.",
+              "El método accede al miembro normalmente.",
+              "Se ignora el acceso."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "Si un método estático intenta acceder a un miembro no estático (de instancia), el compilador generará un error en tiempo de compilación, ya que los miembros estáticos no pueden hacer referencia directa a miembros no estáticos sin una instancia específica."
+          },
+          {
+            "id": "6.4",
+            "pregunta": "¿Qué permite la clase Math en Java?",
+            "opciones": [
+              "Crear objetos matemáticos.",
+              "Realizar operaciones matemáticas mediante métodos estáticos.",
+              "Sobrescribir operadores aritméticos.",
+              "Nada relacionado con matemáticas."
+            ],
+            "respuestaCorrecta": 1,
+            "explicacion": "La clase Math en Java proporciona métodos estáticos para realizar operaciones matemáticas comunes, como cálculos trigonométricos, exponenciales, logarítmicos y operaciones básicas, sin necesidad de crear instancias."
+          },
+          {
+            "id": "6.5",
+            "pregunta": "¿Cuál de las siguientes afirmaciones es verdadera?",
+            "opciones": [
+              "Los métodos estáticos no pueden sobrecargarse.",
+              "Los métodos estáticos pertenecen a la instancia de una clase.",
+              "Los métodos estáticos pueden usarse sin crear un objeto.",
+              "Los métodos estáticos no pueden redefinirse."
+            ],
+            "respuestaCorrecta": 2,
+            "explicacion": "Los métodos estáticos pueden llamarse directamente a través del nombre de la clase sin necesidad de crear objetos, ya que pertenecen a la clase y no a instancias específicas."
+          }
+        ]
+      }
+    ]
+  }
