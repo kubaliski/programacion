@@ -1,0 +1,312 @@
+{
+    "evaluacion": "Programación Evaluación",
+    "tema": "Tema 8",
+    "partes":[
+        {
+            "titulo": "Parte 1",
+            "preguntas":[
+                {
+                    "id":"1.1",
+                    "pregunta": "¿Qué es una clase en Java?",
+                    "opciones":[
+                        "Un tipo de dato primitivo",
+                        "Una plantilla para crear objetos",
+                        "Un archivo ejecutable",
+                        "Una variable"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion": "Una clase en Java es una plantilla o blueprint que define las propiedades y comportamientos que tendrán los objetos creados a partir de ella."
+                },
+                {
+                    "id":"1.2",
+                    "pregunta":"¿Qué palabra clave se usa para definir una clase?",
+                    "opciones":[
+                        "class",
+                        "struct",
+                        "object",
+                        "template"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion": "En Java, la palabra clave 'class' se utiliza para definir una clase."
+                },
+                {
+                    "id":"1.3",
+                    "pregunta":"¿Qué representan los atributos de una clase?",
+                    "opciones":[
+                        "Funcionalidades",
+                        "Datos o características",
+                        "Acciones del objeto",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion": "Los atributos de una clase representan sus datos o características, también conocidos como variables de instancia o campos."
+                },
+                {
+                    "id":"1.4",
+                    "pregunta":"¿Qué es un objeto?",
+                    "opciones":[
+                        "Una función",
+                        "Una instancia de una clase",
+                        "Una variable global",
+                        "Un método estático"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion": "Un objeto es una instancia de una clase, es decir, una entidad concreta creada según la plantilla definida por la clase."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 2",
+            "preguntas":[
+                {
+                    "id":"2.1",
+                    "pregunta":"¿Qué componente de una clase inicializa los atributos al crear un objeto?",
+                    "opciones":[
+                        "Método",
+                        "Constructor",
+                        "Bloque estático",
+                        "Clase anidada"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"El constructor de una clase es el componente encargado de inicializar los atributos al crear un nuevo objeto de la clase."
+                },
+                {
+                    "id":"2.2",
+                    "pregunta":"¿Qué atributo es compartido entre todos los objetos de una clase?",
+                    "opciones":[
+                        "De instancia",
+                        "Estático",
+                        "Privado",
+                        "Final"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Los atributos estáticos (declarados con la palabra clave static) son compartidos entre todos los objetos de una clase, ya que pertenecen a la clase y no a instancias individuales."
+                },
+                {
+                    "id":"2.3",
+                    "pregunta":"¿Qué palabra clave se usa para acceder a miembros de la clase desde un objeto?",
+                    "opciones":[
+                        "new",
+                        "class",
+                        "this",
+                        "static"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"La palabra clave 'this' se utiliza para referirse al objeto actual y acceder a sus miembros (atributos y métodos) dentro de la clase."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 3",
+            "preguntas":[
+                {
+                    "id":"3.1",
+                    "pregunta":"¿Cómo se inicializan los atributos en un constructor?",
+                    "opciones":[
+                        "Usando la palabra clave this",
+                        "Con el modificador static",
+                        "Llamando a métodos privados",
+                        "Usando el método main"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"En un constructor, los atributos se inicializan frecuentemente usando la palabra clave 'this' para distinguir entre los parámetros del constructor y los atributos de la clase."
+                },
+                {
+                    "id":"3.2",
+                    "pregunta":"¿Qué ventaja tiene usar setters para los atributos?",
+                    "opciones":[
+                        "Evitar la encapsulación",
+                        "Validar los valores antes de asignarlos",
+                        "Incrementar la complejidad del código",
+                        "No tiene ninguna ventaja"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Los métodos setter permiten validar los valores antes de asignarlos a los atributos, lo que ayuda a mantener la integridad de los datos del objeto."
+                },
+                {
+                    "id":"3.3",
+                    "pregunta":"¿Qué es un bloque de inicialización?",
+                    "opciones":[
+                        "Un método especial para inicializar atributos",
+                        "Código que se ejecuta antes del constructor",
+                        "Una clase anidada",
+                        "Un método estático"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Un bloque de inicialización es un fragmento de código que se ejecuta antes del constructor cuando se crea una instancia de la clase."
+                },
+                {
+                    "id":"3.4",
+                    "pregunta":"¿Qué ocurre si no se inicializa un atributo?",
+                    "opciones":[
+                        "Se lanza un error en tiempo de ejecución",
+                        "Java asigna valores predeterminados",
+                        "El programa se detiene",
+                        "Los valores se inicializan en cero manualmente"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Si no se inicializa un atributo, Java automáticamente asigna valores predeterminados: 0 para tipos numéricos, false para boolean, null para referencias a objetos, etc."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 4",
+            "preguntas":[
+                {
+                    "id":"4.1",
+                    "pregunta":"¿Qué palabra clave se utiliza para devolver un valor desde un método?",
+                    "opciones":[
+                        "return",
+                        "break",
+                        "void",
+                        "continue"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La palabra clave 'return' se utiliza para devolver un valor desde un método y finalizar su ejecución."
+                },
+                {
+                    "id":"4.2",
+                    "pregunta":"¿Qué ocurre si un método no tiene return y no es void?",
+                    "opciones":[
+                        "No compila",
+                        "Devuelve un valor por defecto",
+                        "Lanza una excepción en tiempo de ejecución",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"Si un método declara un tipo de retorno (no es void) pero no incluye una sentencia return con un valor del tipo adecuado, el compilador generará un error y no compilará."
+                },
+                {
+                    "id":"4.3",
+                    "pregunta":"¿Qué permite la sobrecarga de métodos?",
+                    "opciones":[
+                        "Cambiar el nombre del método",
+                        "Definir varios métodos con el mismo nombre pero diferentes parámetros",
+                        "Sobrescribir un método en una subclase",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"La sobrecarga de métodos permite definir varios métodos con el mismo nombre en la misma clase, siempre que tengan diferentes listas de parámetros (diferente número o tipos de parámetros)."
+                },
+                {
+                    "id":"4.4",
+                    "pregunta":"¿Qué define el tipo de retorno de un método?",
+                    "opciones":[
+                        "El nombre del método",
+                        "Los parámetros del método",
+                        "El valor que devuelve el método",
+                        "La clase del objeto"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"El tipo de retorno de un método define el tipo del valor que el método devuelve. Se especifica antes del nombre del método en su declaración."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 5",
+            "preguntas":[
+                {
+                    "id":"5.1",
+                    "pregunta":"¿Qué hace un constructor?",
+                    "opciones":[
+                        "Devuelve un valor",
+                        "Inicializa atributos de la clase",
+                        "Modifica los métodos de la clase",
+                        "Elimina objetos"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Un constructor es un método especial que se ejecuta cuando se crea un objeto y su principal función es inicializar los atributos de la clase para que el objeto tenga un estado inicial válido."
+                },
+                {
+                    "id":"5.2",
+                    "pregunta":"¿Cuál es la diferencia entre un constructor por defecto y uno parametrizado?",
+                    "opciones":[
+                        "El constructor por defecto no inicializa atributos",
+                        "El constructor parametrizado acepta valores para inicializar atributos",
+                        "El constructor por defecto no existe en Java",
+                        "No hay diferencia"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"La principal diferencia es que el constructor parametrizado acepta parámetros que permiten inicializar los atributos con valores específicos, mientras que el constructor por defecto (sin parámetros) inicializa los atributos con valores predeterminados."
+                },
+                {
+                    "id":"5.3",
+                    "pregunta":"¿Qué permite la sobrecarga de constructores?",
+                    "opciones":[
+                        "Definir varios constructores con el mismo nombre pero diferentes parámetros",
+                        "Crear subclases de una clase",
+                        "Modificar atributos estáticos",
+                        "Llamar al constructor de otra clase"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La sobrecarga de constructores permite definir múltiples constructores en una clase, todos con el mismo nombre (el de la clase) pero con diferentes listas de parámetros, lo que proporciona diferentes formas de crear objetos de esa clase."
+                },
+                {
+                    "id":"5.4",
+                    "pregunta":"¿Qué palabra clave se utiliza para llamar a otro constructor dentro de la misma clase?",
+                    "opciones":[
+                        "this",
+                        "super",
+                        "return",
+                        "new"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La palabra clave 'this' seguida de paréntesis y los argumentos apropiados se utiliza para llamar a otro constructor dentro de la misma clase. Por ejemplo: this(param1, param2);"
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 6",
+            "preguntas":[
+                {
+                    "id":"6.1",
+                    "pregunta":"¿Dónde se almacenan las variables de instancia?",
+                    "opciones":[
+                        "Stack",
+                        "Heap",
+                        "Método principal",
+                        "Clase estática"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Las variables de instancia (atributos de un objeto) se almacenan en el Heap, que es la región de memoria donde se guardan todos los objetos creados durante la ejecución del programa."
+                },
+                {
+                    "id":"6.2",
+                    "pregunta":"¿Qué sucede con una variable local después de que el método termina?",
+                    "opciones":[
+                        "Se mantiene en la memoria",
+                        "Se destruye automáticamente",
+                        "Se convierte en una variable de instancia",
+                        "Nada"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Una variable local se destruye automáticamente cuando finaliza la ejecución del método donde fue declarada, ya que se almacena en el stack y este espacio se libera al terminar el método."
+                },
+                {
+                    "id":"6.3",
+                    "pregunta":"¿Cuál es la diferencia entre una variable estática y una de instancia?",
+                    "opciones":[
+                        "La variable estática pertenece a la clase y la de instancia a un objeto",
+                        "Ambas son iguales",
+                        "La variable estática no puede ser modificada",
+                        "La de instancia es compartida entre todos los objetos"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La variable estática pertenece a la clase y es compartida por todos los objetos de esa clase, mientras que la variable de instancia pertenece específicamente a cada objeto (instancia) y cada objeto tiene su propia copia."
+                },
+                {
+                    "id":"6.4",
+                    "pregunta":"¿Qué palabra clave se usa para acceder a variables de clase estáticas?",
+                    "opciones":[
+                        "this",
+                        "class",
+                        "El nombre de la clase",
+                        "new"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Las variables estáticas se acceden utilizando el nombre de la clase seguido de un punto y el nombre de la variable, por ejemplo: MiClase.miVariableEstatica."
+                }
+            ]
+        }
+    ]
+}
