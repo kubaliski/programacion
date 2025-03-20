@@ -1,0 +1,202 @@
+{
+    "evaluacion": "Programación Evaluación",
+    "tema": "Tema 7",
+    "partes":[
+        {
+            "titulo": "Parte 1",
+            "preguntas":[
+                {
+                    "id":"1.1",
+                    "pregunta": "¿Dónde se almacenan los tipos básicos en Java?",
+                    "opciones":[
+                        "Heap"  ,
+                        "Stack"  ,
+                        "En el disco duro"  ,
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion": "Los tipos básicos se almacenan en la pila (stack)."
+                },
+                {
+                    "id":"1.2",
+                    "pregunta":"¿Qué ocurre con un objeto sin referencia en Java?",
+                    "opciones":[
+                        "Se elimina automáticamente"  ,
+                        "Permanece en memoria"  ,
+                        "Lanza un error de ejecución",
+                        "Se destruye cuando se termina el método"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion": "Un objeto sin referencia en Java permanece en memoria hasta que el recolector de basura lo elimina."
+                },
+                {
+                    "id":"1.3",
+                    "pregunta":"¿Cuál de los siguientes es un tipo básico?",
+                    "opciones":[
+                        "String",
+                        "int",
+                        "Integer",
+                        "Double"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion": "int es un tipo básico en Java."
+                },
+                {
+                    "id":"1.4",
+                    "pregunta":"¿Qué ventaja tiene el almacenamiento de tipos básicos en la stack?",
+                    "opciones":[
+                        "Mayor flexibilidad",
+                        "Más rápido y de acceso directo",
+                        "Tamaño variable",
+                        "Persistencia en memoria"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion": "El almacenamiento de tipos básicos en la stack es más rápido y de acceso directo."
+                },
+                {
+                    "id":"1.5",
+                    "pregunta":"¿Qué palabra clave se utiliza para crear un objeto en el heap?",
+                    "opciones":[
+                        "create",
+                        "allocate",
+                        "new",
+                        "this"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion": "La palabra clave new se utiliza para crear un objeto en el heap."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 2",
+            "preguntas":[
+                {
+                    "id":"2.1",
+                    "pregunta":"¿Qué hace el Garbage Collertor en Java?",
+                    "opciones":[
+                        "Libera memoria ocupada por los objetos no accesibles",
+                        "Asigna espacio para nuevos objetos",
+                        "Evita errores en tiempo de compilacion",
+                        "Lanza excepciones si hay referencias nulas"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":" El Garbage Collector libera memoria ocupada por los objetos no accesibles."
+                },
+                {
+                    "id":"2.2",
+                    "pregunta ":"¿Qué ocurre si llamas manualmente a System.gc()?",
+                    "opciones":[
+                        "Se garantiza la recolección de todos los objetos no referenciados",
+                        "La JVM ignora la solicitud",
+                        "Solicitas la ejecución del Garbaje Collector, pero no hay garantía de cuando ocurrirá",
+                        "Los objetos marcados como null se eliminan de inmediato"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Llamar a System.gc() solicita la ejecución del Garbage Collector, pero no hay garantía de cuándo ocurrirá."
+                },
+                {
+                    "id":"2.3",
+                    "pregunta":"¿Qué método se invoca antes de que un objeto sea eliminado por el Garbage Collector?",
+                    "opciones":[
+                        "finalize()",
+                        "delete()",
+                        "destroy()",
+                        "dispose()"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"El método finalize() se invoca antes de que un objeto sea eliminado por el Garbage Collector OJO ESTÁ DEPRECIADO."
+                },
+                {
+                    "id":"2.4",
+                    "pregunta":"¿Qué ocurre con los objetos que tienen referencias ciclicas?",
+                    "opciones":[
+                        "Se elimina automáticamente",
+                        "Nunca se eliminan",
+                        "Dependen del algoritmo de recolección de basura",
+                        "Lanza un error de ejecución"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Los objetos con referencias cíclicas no se eliminan automáticamente y dependen del algoritmo de recolección de basura."
+                },
+                {
+                    "id":"2.5",
+                    "pregunta":"¿Qué bloque garantiza la liberación de recursos en Java?",
+                    "opciones":[
+                        "try-finally",
+                        "try-catch",
+                        "try-with-resources",
+                        "finally-with-resources"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"El bloque try-with-resources garantiza la liberación de recursos en Java."
+                }
+
+            ]
+        },
+        {
+            "titulo":"Parte 3",
+            "preguntas":[
+                {
+                    "id":"3.1",
+                    "pregunta":"Cuál es el proposito del Garbage Colletor Java",
+                    "opciones":[
+                        "Liberar memoria ocupada por objetos no accesibles",
+                        "Crear objetos en memoria",
+                        "Optimizar el rendimiento en tiempos de compilación",
+                        "Lanzar excepciones si hay fugas de memoria"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La Recolección de Basura (Garbage Collection o GC) es un mecanismo automático de gestión de memoria que identifica y recupera memoria ocupada por objetos que ya no son accesibles o utilizables por un programa."
+                },
+                {
+                    "id":"3.2",
+                    "pregunta":"¿Qué palabra clave se utiliza para solicitar manualmente la ejecución del Garbage Collector?",
+                    "opciones":[
+                        "gc.run()",
+                        "System.cleanup()",
+                        "System.gc()",
+                        "Garbage.run()"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion": "System.gc es la forma en la que se llama manualmente al GC en JAva"
+                },
+                {
+                    "id":"3.3",
+                    "pregunta":"¿Qué ocurre si una referencia apunta a null?",
+                    "opciones":[
+                        "El objeto es elminado automaticamente",
+                        "Se lanza un error en tiempo de ejecución",
+                        "El objeto queda inaccesible y es candiato para el Garbaje Collector",
+                        "El programa deja de ejecutarse"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Un objeto sin referencia en Java permanece en memoria hasta que el recolector de basura lo elimina."
+                },
+                {
+                    "id":"3.4",
+                    "pregunta":"¿Qué ventaja ofrece el uso de try-with-resources",
+                    "opciones":[
+                        "Automatiza la gestion de recursos como archivos o conexiones",
+                        "Garantiza la ejecución del Garbaje Collector",
+                        "Reemplaza la necesidad de constuctores",
+                        "Permite crear referencias ciclicas"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"Try-with-resources se introdujo precisamente para este propósito: automatizar el cierre de recursos que implementan la interfaz AutoCloseable (como FileReader, BufferedReader, Connection de JDBC, etc.), eliminando la necesidad de escribir código explícito de limpieza en bloques finally."
+                },
+                {
+                    "id":"3.5",
+                    "pregunta":"Qué diferencia principal hay entre stack y heap?",
+                    "opciones":[
+                        "El stack es más rapido pero más pequeño que el heap",
+                        "El heap almacena las variables locales y el stack los objetos",
+                        "Solo el stack es gestionado por el garbage collector",
+                        "No hay diferencias significativas"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"el stack ofrece acceso más rápido pero con capacidad limitada, mientras que el heap proporciona más espacio a costa de una velocidad de acceso menor."
+                }
+            ]
+        }
+    ]
+}
