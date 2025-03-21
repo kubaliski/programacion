@@ -1,0 +1,47 @@
+{
+    "evaluacion":"Programacion Evaluación",
+    "tema":"Tema 9",
+    "partes":[
+        {
+            "titulo":"Parte 1",
+            "preguntas":[
+                {
+                    "id": "1.1",
+                    "pregunta":"¿ Qué clase se utiliza par aleer archivos línea por línea",
+                    "opciones":[
+                        "BufferedReader",
+                        "Scanner",
+                        "Ambas",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":" Scanner no está limitado a la entrada estándar y puede utilizarse perfectamente para leer archivos."
+                },
+                {
+                    "id":"1.2",
+                    "pregunta":"¿Qué método de BufferedReader se usa para leer una línea completa",
+                    "opciones":[
+                        "read",
+                        "readLine",
+                        "nextLine",
+                        "readFile"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"readLine() es el método correcto"
+                },
+                {
+                    "id":"1.3",
+                    "pregunta":"¿Qué bloque asegura el cierre automático de recursos en Java?",
+                    "opciones":[
+                        "try-catch",
+                        "try-finally",
+                        "try-with-resources",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Bloque try-with-resources Se asegura de cerrar los recursos automáticamente."
+                }
+            ]
+        }
+    ]
+}
