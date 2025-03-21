@@ -307,6 +307,404 @@
                     "explicacion":"Las variables estáticas se acceden utilizando el nombre de la clase seguido de un punto y el nombre de la variable, por ejemplo: MiClase.miVariableEstatica."
                 }
             ]
+        },
+        {
+            "titulo":"Parte 7",
+            "preguntas":[
+                {
+                    "id":"7.1",
+                    "pregunta":"¿Qué permite la sobrecarga de métodos?",
+                    "opciones":[
+                        "Crear métodos con el mismo nombre pero diferentes parámetros",
+                        "Modificar un método en una subclase",
+                        "Usar un solo método para todas las clases",
+                        "Hacer que un método devuelva varios valores"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La sobrecarga de métodos permite definir múltiples métodos con el mismo nombre en la misma clase, siempre que se diferencien en el número o tipo de parámetros que aceptan."
+                },
+                {
+                    "id":"7.2",
+                    "pregunta":"¿Qué diferencia debe existir entre métodos sobrecargados?",
+                    "opciones":[
+                        "Tipo de retorno",
+                        "Nombre del método",
+                        "Número o tipo de parámetros",
+                        "Comentarios en el código"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Los métodos sobrecargados deben diferenciarse en el número o tipo de parámetros. Solo el tipo de retorno no es suficiente para diferenciar métodos sobrecargados en Java."
+                },
+                {
+                    "id":"7.3",
+                    "pregunta":"¿Cuál de las siguientes opciones es válida para sobrecargar un método?",
+                    "opciones":[
+                        "Cambiar el tipo de retorno únicamente",
+                        "Cambiar el nombre del método",
+                        "Cambiar el número o tipo de parámetros",
+                        "Usar static para diferenciar los métodos"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Para sobrecargar un método correctamente, se debe cambiar el número o tipo de parámetros. Cambiar solo el tipo de retorno no es suficiente para la sobrecarga, y cambiar el nombre crearía un método diferente, no una sobrecarga."
+                },
+                {
+                    "id":"7.4",
+                    "pregunta":"¿Qué ocurre si llamas a un método sobrecargado con parámetros que coinciden con varios métodos?",
+                    "opciones":[
+                        "Se produce un error de compilación",
+                        "El compilador elige el método más específico",
+                        "Se ejecutan todos los métodos",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Si la llamada a un método sobrecargado podría coincidir con varios métodos, el compilador de Java selecciona el método más específico (el que requiere la menor cantidad de conversiones implícitas de tipos). Si no puede determinar cuál es más específico, generará un error de compilación por ambigüedad."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 8: Visibilidad. Modificadores de clase, de atributos y de métodos",
+            "preguntas":[
+                {
+                    "id":"8.1",
+                    "pregunta":"¿Qué modificador permite el acceso a un atributo desde cualquier clase?",
+                    "opciones":[
+                        "private",
+                        "protected",
+                        "public",
+                        "Sin modificador"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"El modificador 'public' permite que un atributo o método sea accesible desde cualquier clase, independientemente del paquete en el que se encuentre."
+                },
+                {
+                    "id":"8.2",
+                    "pregunta":"¿Cuál de los siguientes modificadores limita el acceso solo a la misma clase?",
+                    "opciones":[
+                        "public",
+                        "protected",
+                        "private",
+                        "Sin modificador"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"El modificador 'private' restringe el acceso al atributo o método únicamente a la clase en la que está definido, haciéndolo inaccesible desde otras clases, incluso desde subclases."
+                },
+                {
+                    "id":"8.3",
+                    "pregunta":"¿Qué modificador de acceso permite que un atributo sea visible solo en el mismo paquete?",
+                    "opciones":[
+                        "public",
+                        "protected",
+                        "default (sin modificador)",
+                        "private"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"El acceso por defecto (sin modificador explícito) permite que el atributo o método sea accesible solo por clases dentro del mismo paquete, pero no desde otros paquetes."
+                },
+                {
+                    "id":"8.4",
+                    "pregunta":"¿Cómo se accede a un atributo privado?",
+                    "opciones":[
+                        "Usando la palabra clave this.",
+                        "Mediante un método setter o getter.",
+                        "Directamente desde otra clase.",
+                        "Con la palabra clave public."
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Los atributos privados no son accesibles directamente desde fuera de la clase, por lo que se utilizan métodos públicos setter (para modificar) y getter (para obtener) que actúan como intermediarios para acceder a estos atributos."
+                },
+                {
+                    "id":"8.5",
+                    "pregunta":"¿Qué modificador permite el acceso a métodos en subclases, pero no desde otras clases externas?",
+                    "opciones":[
+                        "private",
+                        "protected",
+                        "public",
+                        "Sin modificador"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"El modificador 'protected' permite el acceso al elemento desde la misma clase, desde clases en el mismo paquete y desde todas las subclases (incluso si están en otros paquetes), pero no desde otras clases externas."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 9",
+            "preguntas":[
+                {
+                    "id":"9.1",
+                    "pregunta":"¿Qué significa paso por valor en Java?",
+                    "opciones":[
+                        "Se pasa una copia del valor o referencia",
+                        "Se pasa el valor original directamente",
+                        "Se pasa una copia completa del objeto",
+                        "Se crea un objeto nuevo dentro del método"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"En Java, el paso por valor significa que se pasa una copia del valor (para tipos primitivos) o una copia de la referencia (para objetos) al método. No se pasa el objeto original, sino una copia de su referencia."
+                },
+                {
+                    "id":"9.2",
+                    "pregunta":"¿Qué sucede si modificamos el estado interno de un objeto pasado como parámetro?",
+                    "opciones":[
+                        "El objeto original se modifica",
+                        "No se modifica el objeto original",
+                        "Se crea un nuevo objeto",
+                        "Se lanza un error"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"Cuando modificamos el estado interno de un objeto pasado como parámetro (por ejemplo, cambiando sus atributos), el objeto original se modifica porque aunque se pasa una copia de la referencia, ambas referencias apuntan al mismo objeto en memoria."
+                },
+                {
+                    "id":"9.3",
+                    "pregunta":"¿Qué ocurre si reasignamos una referencia de objeto dentro de un método?",
+                    "opciones":[
+                        "El objeto original también se reasigna",
+                        "La referencia original permanece sin cambios",
+                        "El objeto original se destruye",
+                        "Se lanza una excepción"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Si reasignamos una referencia de objeto dentro de un método, la referencia original permanece sin cambios. Esto ocurre porque Java pasa la referencia por valor, así que la reasignación solo afecta a la copia local de la referencia dentro del método."
+                },
+                {
+                    "id":"9.4",
+                    "pregunta":"¿Qué tipo de datos no puede modificarse en un método?",
+                    "opciones":[
+                        "Objetos",
+                        "Tipos primitivos",
+                        "Referencias",
+                        "Ninguno de los anteriores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Los tipos primitivos (int, float, boolean, etc.) no pueden modificarse en un método cuando se pasan como parámetros, ya que Java pasa una copia del valor. Cualquier cambio a este valor dentro del método no afecta a la variable original fuera del método."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 10",
+            "preguntas":[
+                {
+                    "id":"10.1",
+                    "pregunta":"¿Qué palabra clave se usa para crear un objeto en Java?",
+                    "opciones":[
+                        "new",
+                        "create",
+                        "instance",
+                        "object"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"En Java, la palabra clave 'new' se utiliza para crear un objeto (instancia) de una clase. Esta palabra clave reserva memoria en el heap para el objeto y llama al constructor de la clase para inicializarlo."
+                },
+                {
+                    "id":"10.2",
+                    "pregunta":"¿Cómo accedemos a un atributo de un objeto?",
+                    "opciones":[
+                        "objeto:atributo",
+                        "objeto.atributo",
+                        "atributo(objeto)",
+                        "Ninguna de las anteriores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Para acceder a un atributo de un objeto en Java, utilizamos el operador punto (.) después del nombre del objeto, seguido del nombre del atributo: objeto.atributo. Esto asume que el atributo es accesible desde ese contexto."
+                },
+                {
+                    "id":"10.3",
+                    "pregunta":"¿Cuál de las siguientes afirmaciones es correcta?",
+                    "opciones":[
+                        "Una clase puede tener solo un objeto",
+                        "Los objetos no pueden compartir métodos",
+                        "Una clase puede tener múltiples objetos",
+                        "Los métodos no pueden acceder a los atributos"
+                    ],
+                    "respuestaCorrecta":2,
+                    "explicacion":"Una clase puede tener múltiples objetos (instancias). De hecho, una de las ventajas principales de la programación orientada a objetos es poder crear múltiples instancias de una misma clase, cada una con su propio estado."
+                },
+                {
+                    "id":"10.4",
+                    "pregunta":"¿Qué ocurre si creamos múltiples objetos de una clase?",
+                    "opciones":[
+                        "Comparten la misma memoria",
+                        "Cada objeto tiene su propia copia de atributos de instancia",
+                        "Los objetos sobrescriben los atributos del otro",
+                        "No es posible crear múltiples objetos"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Cuando creamos múltiples objetos de una clase, cada objeto tiene su propia copia de los atributos de instancia. Esto significa que los objetos pueden tener diferentes valores para los mismos atributos. Sin embargo, los atributos estáticos (static) sí son compartidos entre todos los objetos de la clase."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 11: Utilización de clases heredadas",
+            "preguntas":[
+                {
+                    "id":"11.1",
+                    "pregunta":"¿Qué palabra clave se utiliza para establecer la herencia en Java?",
+                    "opciones":[
+                        "extends",
+                        "inherits",
+                        "super",
+                        "implements"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"En Java, la palabra clave 'extends' se utiliza para establecer una relación de herencia entre clases. La clase que usa 'extends' hereda atributos y métodos de la superclase especificada."
+                },
+                {
+                    "id":"11.2",
+                    "pregunta":"¿Qué hace la palabra clave super?",
+                    "opciones":[
+                        "Accede a métodos y atributos privados de una clase",
+                        "Llama al constructor de la superclase o accede a métodos/atributos heredados",
+                        "Declara una nueva subclase",
+                        "Define un método sobrecargado"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"La palabra clave 'super' se utiliza principalmente para dos propósitos: invocar el constructor de la superclase (super() o super(args)) o para acceder a métodos y atributos heredados de la superclase que han sido sobrescritos en la subclase (super.método() o super.atributo)."
+                },
+                {
+                    "id":"11.3",
+                    "pregunta":"¿Qué es sobrescritura de métodos?",
+                    "opciones":[
+                        "Definir un método con el mismo nombre pero diferentes parámetros",
+                        "Reescribir un método heredado en una subclase",
+                        "Crear múltiples métodos con el mismo cuerpo",
+                        "Ocultar métodos de una clase"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"La sobrescritura de métodos (method overriding) es una característica de la programación orientada a objetos que permite a una subclase proporcionar una implementación específica para un método que ya está definido en su superclase. El método en la subclase debe tener la misma firma (nombre, parámetros y tipo de retorno) que el método en la superclase."
+                },
+                {
+                    "id":"11.4",
+                    "pregunta":"¿Cuál de las siguientes afirmaciones es verdadera?",
+                    "opciones":[
+                        "Una subclase no puede acceder a métodos de la superclase",
+                        "La palabra clave super se usa para llamar al constructor de la superclase",
+                        "La herencia no permite reutilización del código",
+                        "Una subclase puede sobrescribir constructores"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"Es verdadero que la palabra clave 'super' se usa para llamar al constructor de la superclase. Esto es comúnmente necesario en constructores de subclases para asegurar que la inicialización definida en la superclase se ejecute correctamente antes de cualquier inicialización específica de la subclase."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 12: Paquetes en Java",
+            "preguntas":[
+                {
+                    "id":"12.1",
+                    "pregunta":"¿Qué palabra clave se utiliza para declarar un paquete en Java?",
+                    "opciones":[
+                        "package",
+                        "import",
+                        "namespace",
+                        "class"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"En Java, la palabra clave 'package' se utiliza para declarar a qué paquete pertenece una clase. Esta declaración debe ser la primera sentencia en el archivo fuente de la clase (antes de cualquier import o declaración de clase)."
+                },
+                {
+                    "id":"12.2",
+                    "pregunta":"¿Cómo se importan todas las clases de un paquete?",
+                    "opciones":[
+                        "import paquete.*;",
+                        "include paquete.*;",
+                        "import paquete.all;",
+                        "package.import *;"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"Para importar todas las clases de un paquete en Java, se utiliza la sintaxis 'import paquete.*;'. El asterisco (*) es un comodín que indica que se importan todas las clases del paquete, aunque no importa las clases en sus subpaquetes."
+                },
+                {
+                    "id":"12.3",
+                    "pregunta":"¿Qué estructura de directorios debe seguir un paquete en Java?",
+                    "opciones":[
+                        "Debe coincidir con el nombre del paquete",
+                        "Debe ser una carpeta aleatoria",
+                        "No necesita una estructura específica",
+                        "Debe ser una subcarpeta de java"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"En Java, la estructura de directorios debe coincidir con la estructura de nombres del paquete. Por ejemplo, si una clase está en el paquete 'com.empresa.proyecto', el archivo .java debe estar en el directorio 'com/empresa/proyecto/' (o 'com\\empresa\\proyecto\\' en Windows)."
+                },
+                {
+                    "id":"12.4",
+                    "pregunta":"¿Cuál de las siguientes es una ventaja del uso de paquetes?",
+                    "opciones":[
+                        "Evitar conflictos de nombres",
+                        "No se puede reutilizar el código",
+                        "Los paquetes no son organizados",
+                        "Complica el desarrollo de software"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"Una ventaja importante del uso de paquetes en Java es evitar conflictos de nombres entre clases. Los paquetes permiten tener clases con el mismo nombre en diferentes paquetes sin que causen conflicto. Además, los paquetes facilitan la organización del código, mejoran la modularidad y permiten un mejor control de acceso."
+                }
+            ]
+        },
+        {
+            "titulo":"Parte 13: Documentación con Javadoc",
+            "preguntas":[
+                {
+                    "id":"13.1",
+                    "pregunta":"¿Qué herramienta se utiliza en Java para generar documentación?",
+                    "opciones":[
+                        "Javadoc",
+                        "DocGen",
+                        "JavaDocs",
+                        "JavaComment"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"Javadoc es la herramienta oficial de Java para generar documentación de API en formato HTML a partir de los comentarios en el código fuente. Permite documentar clases, interfaces, métodos y campos de manera estructurada."
+                },
+                {
+                    "id":"13.2",
+                    "pregunta":"¿Qué etiqueta se utiliza para documentar los parámetros de un método?",
+                    "opciones":[
+                        "@param",
+                        "@args",
+                        "@method",
+                        "@return"
+                    ],
+                    "respuestaCorrecta":0,
+                    "explicacion":"La etiqueta @param se utiliza para documentar los parámetros de un método. Se debe incluir el nombre del parámetro seguido de una descripción. Por ejemplo: @param nombreParametro descripción del parámetro."
+                },
+                {
+                    "id":"13.3",
+                    "pregunta":"¿Qué comando se usa para generar la documentación Javadoc?",
+                    "opciones":[
+                        "java -doc",
+                        "javadoc",
+                        "javac -docs",
+                        "docgen"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"El comando 'javadoc' es el que se utiliza para generar la documentación a partir de los comentarios Javadoc en los archivos fuente. Se puede usar con varias opciones para personalizar la salida."
+                },
+                {
+                    "id":"13.4",
+                    "pregunta":"¿Dónde se almacena la documentación generada por Javadoc?",
+                    "opciones":[
+                        "En el archivo fuente .java.",
+                        "En la carpeta especificada con -d.",
+                        "En una base de datos.",
+                        "Dentro de la JVM."
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"La documentación generada por Javadoc se almacena en la carpeta especificada con la opción -d del comando javadoc. Si no se especifica esta opción, la documentación se genera en el directorio actual."
+                },
+                {
+                    "id":"13.5",
+                    "pregunta":"¿Qué archivo se utiliza para documentar un paquete?",
+                    "opciones":[
+                        "package.xml",
+                        "package-info.java",
+                        "README.md",
+                        "doc-package.txt"
+                    ],
+                    "respuestaCorrecta":1,
+                    "explicacion":"El archivo package-info.java se utiliza para proporcionar documentación a nivel de paquete en Java. Este archivo contiene solo un comentario Javadoc y una declaración de paquete, pero no contiene ninguna declaración de clase o interfaz."
+                }
+            ]
         }
     ]
+    
 }
+                   
+    
